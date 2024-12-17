@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda de Pinturas para Autos - Nahuel Noroña</title>
     <link rel="stylesheet" href="stylees.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Contenido de la página -->
@@ -25,7 +29,7 @@
 
     <header>
         <div class="logo">
-            <h1>Tienda de Pinturas - Nahuel Noroña</h1>
+            <h1>Tienda de Estetica Vehicular - Nahuel Noroña</h1>
         </div>
         <nav>
             <ul>
@@ -46,10 +50,12 @@
             <!-- Producto Banana -->
             <div class="producto" onclick="abrirModal('producto1')">
                 <img src="banana.png" alt="Shampoo Banana">
-                <h3>Shampoo Banana - 500ml</h3>
-                <p class="descripcion-corta">Shampoo con potenciador de brillo, PH neutro, alto poder espumógeno y de limpieza con aroma a banana.</p>
+                <h3>Shampoo Banana - 500ml</h3> 
+                <p id="descripcion" class="descripcion-corta">Shampoo con potenciador de brillo PH neutro, alto poder espumógeno y de limpieza con aroma a banana.</p>
                 <span class="precio">4300,00 ARS</span>
             </div>
+            
+
 
             <!-- Producto Wash Car Wax -->
             <div class="producto" onclick="abrirModal('producto2')">
@@ -134,7 +140,7 @@
     
     <!-- Modal para Water Spot -->
     <div class="modal" id="producto7">
-        <div class="modal-contenido">
+        <div class="modal-contenido"id="conte" >
             <span class="cerrar" onclick="cerrarModal('producto7')">×</span>
             <img src="water.png" alt="Water Spot">
             <h3>Water Spot - 500ml</h3>
@@ -235,7 +241,7 @@
         <p>Restaura y reacondiciona plásticos y gomas del exterior, dejando una terminación satinada. No daña ni deteriora la superficie.</p>
         <p>Posee pigmentos negros con un agradable aroma a café.</p>
         <span class="precio">10.500,00 ARS</span>
-        <button>Agregar al carrito</button>
+        
     </div>
 </div>
 
@@ -248,7 +254,7 @@
         <p>Restaura y reacondiciona plásticos y gomas del exterior, dejando una terminación satinada.</p>
         <p>No daña ni deteriora la superficie.</p>
         <span class="precio">14.000,00 ARS</span>
-        <button>Agregar al carrito</button>
+        
     </div>
 </div>
 
@@ -262,7 +268,7 @@
         <p>Acondicionador de exterior a base de siliconas, que brinda un rendimiento excepcional y fácil de usar.</p>
         <p>Otorga una terminación brillante y restauradora a las superficies tratadas.</p>
         <span class="precio">17.000,00 ARS</span>
-        <button>Agregar al carrito</button>
+
     </div>
 </div>
 <!-- Sección Revividor de Interior -->
@@ -314,7 +320,7 @@
             <img src="uvashake.png" alt="UVA SHAKE">
             <h3>UVA SHAKE - 500ml</h3>
             <p class="descripcion-corta">Revividor cremoso de plásticos interiores con terminación satinada y aroma a uva.</p>
-            <span class="precio">8.200,00 ARS</span>
+            <span class="precio">8200,00 ARS</span>
         </div>
 
         <!-- Producto TRIM LOOK CANDY -->
@@ -322,7 +328,7 @@
             <img src="thrim.png" alt="TRIM LOOK CANDY">
             <h3>TRIM LOOK CANDY - 500ml</h3>
             <p class="descripcion-corta">Revividor de plásticos interiores con terminación satinada.</p>
-            <span class="precio">8.000,00 ARS</span>
+            <span class="precio">8000,00 ARS</span>
         </div>
     </div>
 </section>
@@ -336,7 +342,6 @@
         <p>Revividor de cueros de base acuosa. Nutre y restaura devolviendo flexibilidad y evitando el deterioro del paso del tiempo.</p>
         <p>Posee una excelente terminación con fragancia a cuero.</p>
         <span class="precio">8.800,00 ARS</span>
-        <button>Agregar al carrito</button>
     </div>
 </div>
 
@@ -349,7 +354,7 @@
         <p>Revividor de plásticos interiores con terminación natural y aroma a chicle.</p>
         <p>Brinda protección contra rayos UV y disminuye el deterioro de superficies.</p>
         <span class="precio">8.000,00 ARS</span>
-        <button>Agregar al carrito</button>
+        
     </div>
 </div>
 
@@ -362,7 +367,6 @@
         <p>Revividor de plásticos interiores con terminación brillante y aroma a multifruta.</p>
         <p>Brinda protección contra rayos UV y disminuye el deterioro de superficies.</p>
         <span class="precio">8.200,00 ARS</span>
-        <button>Agregar al carrito</button>
     </div>
 </div>
 
@@ -375,7 +379,7 @@
         <p>Revividor de plásticos interiores con terminación satinada y aroma a Shoter.</p>
         <p>Brinda protección contra rayos UV y disminuye el deterioro de superficies.</p>
         <span class="precio">8.200,00 ARS</span>
-        <button>Agregar al carrito</button>
+        
     </div>
 </div>
 
@@ -388,7 +392,7 @@
         <p>Revividor de plásticos interiores con terminación satinada y aroma a frutilla.</p>
         <p>Brinda protección contra rayos UV y disminuye el deterioro de superficies.</p>
         <span class="precio">8.200,00 ARS</span>
-        <button>Agregar al carrito</button>
+        
     </div>
 </div>
 
@@ -401,7 +405,7 @@
         <p>Revividor cremoso de plásticos interiores con terminación satinada y aroma a uva.</p>
         <p>Brinda protección contra rayos UV y disminuye el deterioro de superficies.</p>
         <span class="precio">8.200,00 ARS</span>
-        <button>Agregar al carrito</button>
+       
     </div>
 </div>
 
@@ -414,7 +418,7 @@
         <p>Revividor de plásticos interiores con terminación satinada.</p>
         <p>Brinda protección contra rayos UV y disminuye el deterioro de superficies.</p>
         <span class="precio">8.000,00 ARS</span>
-        <button>Agregar al carrito</button>
+       
     </div>
 </div>
 
@@ -426,7 +430,7 @@
         <h3>DARK FLUID - 500ml</h3>
         <p>Producto de alto rendimiento, creado para dejar una terminación brillosa y renovar el aspecto de neumáticos.</p>
         <span class="precio">5.500,00 ARS</span>
-        <button>Agregar al carrito</button>
+       
     </div>
 </div>
 
@@ -440,7 +444,7 @@
             <p>Shampoo con potenciador de brillo, PH neutro, alto poder espumógeno y de limpieza con aroma a banana.</p>
             <p>No barre ceras ni selladores siendo seguro para superficies con tratamientos.</p>
             <span class="precio">4300,00 ARS</span>
-            <button>Agregar al carrito</button>
+           
         </div>
     </div>
 
@@ -452,7 +456,7 @@
             <p>Shampoo con PH neutro, alto poder espumógeno y de limpieza con aroma a cereza.</p>
             <p>Brinda protección y no barre ceras ni selladores siendo seguro para superficies con tratamientos.</p>
             <span class="precio">5000,00 ARS</span>
-            <button>Agregar al carrito</button>
+            
         </div>
     </div>
 
@@ -464,7 +468,7 @@
             <p>Shampoo diseñado para Foam Lance. Posee PH neutro, alto poder espumógeno y de limpieza.</p>
             <p>No barre ceras ni selladores. Apto para superficies con tratamientos.</p>
             <span class="precio">6000,00 ARS</span>
-            <button>Agregar al carrito</button>
+            
         </div>
     </div>
 
@@ -476,7 +480,7 @@
             <p>Shampoo con potenciadores de brillo, pH neutro con alto poder espumógeno y de limpieza.</p>
             <p>No barre ceras ni tratamientos previos.</p>
             <span class="precio">4500,00 ARS</span>
-            <button>Agregar al carrito</button>
+            
         </div>
     </div>
 
@@ -488,7 +492,7 @@
             <p>Producto estrella de la marca, potencia el brillo y sella la superficie. PH neutro y alto poder espumógeno.</p>
             <p>Apto para superficies con tratamiento.</p>
             <span class="precio">6000,00 ARS</span>
-            <button>Agregar al carrito</button>
+           
         </div>
     </div>
 
@@ -499,19 +503,19 @@
             <h3>Galón Wash Car Wax - 4L</h3>
             <p>Shampoo galón con PH neutro, alto poder espumógeno y de limpieza con aroma a cereza.</p>
             <p>Brinda protección y no barre ceras ni selladores siendo seguro para superficies con tratamientos.</p>
-            <span class="precio">16.500,00 ARS</span>
-            <button>Agregar al carrito</button>
+            <span id="pre" class="precio">16.500,00 ARS</span>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2024 Tienda de Pinturas para Autos - Nahuel Noroña. Todos los derechos reservados.</p>
+        <p id="fot">&copy; 2024 Tienda de Pinturas para Autos - Nahuel Noroña. Todos los derechos reservados.</p>
     </footer>
 
     <script>
         // Función para abrir el modal
         function abrirModal(id) {
             document.getElementById(id).style.display = "flex";
+            
         }
 
         // Función para cerrar el modal
