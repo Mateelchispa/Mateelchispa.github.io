@@ -1,3 +1,4 @@
+
 /* Fondo de la página con imagen */
 body {
     background-image: url('uf.png'); /* Ruta de la imagen */
@@ -5,7 +6,7 @@ body {
     background-position: center center; /* Centra la imagen en la pantalla */
     background-attachment: fixed; /* Fija la imagen para que no se mueva al hacer scroll */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
-    font-family: Arial, sans-serif;
+    font-family: "Poppins", serif;  
     color: white;
     margin: 0;
     padding: 0;
@@ -16,6 +17,39 @@ header {
     text-align: center;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente para mejor contraste */
+}
+
+/* Hacer el logo más pequeño y redondeado */
+header .logo img {
+    width: 100px; /* Tamaño del logo, puedes ajustarlo */
+    height: 100px; /* Tamaño del logo */
+    border-radius: 50%; /* Hace la imagen redonda */
+    object-fit: cover; /* Ajusta la imagen para que no se distorsione */
+}
+
+/* Estilo para el contenido principal */
+section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Estilo para el pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    color: rgb(255, 255, 255);
+}
+
+footer strong {
+    color: #ffffff; /* Rojo tomate */
+}
+
+#fot{
+    color: #ffffff;
 }
 
 /* Hacer el logo más pequeño y redondeado */
@@ -47,11 +81,20 @@ footer strong {
     color: #ffffff; /* Rojo tomate */
 }
 
+
 /* Estilos para el encabezado */
 header {
     text-align: center;
     padding: 20px;
     background-color: rgba(241, 229, 229, 0.6); /* Fondo semi-transparente para mejor contraste */
+}
+
+/* Hacer el logo más pequeño y redondeado */
+header .logo img {
+    width: 100px; /* Tamaño del logo, puedes ajustarlo */
+    height: 100px; /* Tamaño del logo */
+    border-radius: 50%; /* Hace la imagen redonda */
+    object-fit: cover; /* Ajusta la imagen para que no se distorsione */
 }
 
 /* Estilo para el contenido principal */
@@ -159,7 +202,7 @@ nav ul li a:hover {
 .productos h2 {
     font-size: 2.5rem;
     margin-bottom: 30px;
-    color: #000000; /* Naranja brillante */
+    color: #f1eeee; /* Naranja brillante */
 }
 
 .grid-productos {
@@ -174,7 +217,7 @@ nav ul li a:hover {
     padding: 20px;
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
     cursor: pointer;
 }
 
@@ -193,11 +236,11 @@ nav ul li a:hover {
 .producto h3 {
     font-size: 1.6rem;
     margin-top: 15px;
-    color: #ff0202; /* Rojo burdeos */
+    color: #470000; /* Rojo burdeos */
 }
 
 .producto .descripcion-corta {
-    color: #c5c7bd; /* Gris claro */
+    color: #ffffff; /* Gris claro */
     font-size: 1rem;
     margin: 10px 0;
     display: -webkit-box;
@@ -208,7 +251,7 @@ nav ul li a:hover {
 .producto .precio {
     font-size: 1.3rem;
     font-weight: bold;
-    color: #27ae60; /* Verde vibrante */
+    color: #05ff6d; /* Verde vibrante */
 }
 
 /* Estilo para el modal */
@@ -220,19 +263,19 @@ nav ul li a:hover {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Fondo negro */
+  
     justify-content: center;
     align-items: center;
 }
 
 .modal-contenido {
-    background-color: #fff;
+    background-color:rgb(59, 59, 59);
     padding: 20px;
     border-radius: 8px;
     width: 80%;
     max-width: 600px;
     text-align: center;
-    color: #333;
+    color: #000000;
 }
 
 .modal img {
@@ -244,10 +287,10 @@ nav ul li a:hover {
 
 .cerrar {
     position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 30px;
-    color: #ff0000; /* Rojo burdeos */
+    top: 80px;
+    right: 90px;
+    font-size: 50px;
+    color: #ffffff; /* Rojo burdeos */
     cursor: pointer;
 }
 
@@ -275,68 +318,18 @@ footer a {
     text-decoration: none;
     font-weight: bold;
 }
-
-p {
+p{
     color: #ffffff;
 }
 
-#sham {
+#sham{
     color: #fff;
 }
-
-/* Media Queries para dispositivos pequeños */
-@media screen and (max-width: 768px) {
-    /* Hacer que el logo se reduzca en pantallas pequeñas */
-    header .logo img {
-        width: 80px;
-        height: 80px;
-    }
-
-    /* Hacer que los títulos sean más pequeños */
-    header h1 {
-        font-size: 2rem;
-    }
-
-    /* Ajustar la sección de productos para pantallas pequeñas */
-    .productos h2 {
-        font-size: 2rem;
-    }
-
-    /* Ajustar el tamaño de las tarjetas de productos */
-    .grid-productos {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    }
-
-    /* Ajustar el pie de página */
-    footer {
-        font-size: 0.8rem;
-    }
+#pre{
+    color: green;
+}
+.precio{
+    color: green;
 }
 
-/* Media Queries para dispositivos muy pequeños */
-@media screen and (max-width: 480px) {
-    /* Hacer que el logo sea más pequeño */
-    header .logo img {
-        width: 60px;
-        height: 60px;
-    }
-
-    /* Ajustar el título principal */
-    header h1 {
-        font-size: 1.5rem;
-    }
-
-    /* Ajustar la sección de productos */
-    .productos h2 {
-        font-size: 1.8rem;
-    }
-
-    .grid-productos {
-        grid-template-columns: 1fr; /* Colocar los productos en una sola columna */
-    }
-
-    /* Ajustar el tamaño de la fuente del pie de página */
-    footer {
-        font-size: 0.7rem;
-    }
-}
+  
