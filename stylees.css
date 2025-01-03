@@ -396,12 +396,12 @@ p{
 .redes{
    top: 50px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background-color: transparent; /* Rojo burdeos */
     color: rgb(19, 224, 0);
     position: absolute;
     width: 100%;
     bottom: 40px;
-    align-items:center;
+    align-items: end;
   
 }
